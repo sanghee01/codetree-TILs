@@ -18,4 +18,7 @@ function gcd(n, m) {
 
 }
 
-gcd(12, 18);
+const fs = require("fs");
+const input = fs.readFileSync(0).toString().trim().split(" ");
+const [n, m] = input.map(Number);
+gcd(n, m);
