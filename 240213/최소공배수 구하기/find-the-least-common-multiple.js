@@ -3,11 +3,9 @@ function findLCM (n, m){
     for(let i =1; i <= Math.min(n,m); i++){
         if(n%i === 0 && m%i === 0) lcm *=i;
     }
-    if(n === 1 || m === 1){
-        console.log(Math.max(n,m))
-    }else{
-         console.log(lcm);
-    }
+    if (lcm === 1) lcm = n*m;
+    
+    console.log(lcm);
 }
 
 const fs = require("fs");
