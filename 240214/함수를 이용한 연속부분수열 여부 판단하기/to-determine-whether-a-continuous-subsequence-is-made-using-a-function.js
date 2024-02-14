@@ -1,9 +1,6 @@
 function isInARow(a, b){
-    let answer = "Yes";
-    const start = a.indexOf(b[0]);
-    for(let i = 0; i < b.length; i++){
-        if(b[i] !== a[start+i]) answer="No";
-    }
+    let answer = "No";
+    if(a.join("").includes(b.join(""))) answer="Yes"
 
     return answer;
 }
