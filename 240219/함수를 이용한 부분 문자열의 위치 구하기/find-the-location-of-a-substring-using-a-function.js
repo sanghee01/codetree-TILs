@@ -5,7 +5,7 @@ const inputString = input[1];
 
 function includeIndex(){
     let cnt = inputString.length;
-    let index;
+    let index = 0;
     for(let i = 0; i<inputStringAim.length; i++){
         for(let j = 0; j<inputString.length; j++){
             if(cnt !== inputString.length ){
