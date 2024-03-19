@@ -5,7 +5,7 @@ let list = [];
 
 function returnStartT(input){
     for(let x of input){
-        if(x.includes(t)) list.push(x);
+        if(x.slice(0,t.length)===t) list.push(x);
     }
     list.sort();
 
