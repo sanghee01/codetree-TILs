@@ -17,7 +17,12 @@ for(let i = 0; i < n; i++){
     humans[i] = new human(name, code, city);
 }
 
-const lastHuman = humans.sort().reverse()[0];
+const lastHuman = humans.sort((a,b)=>{
+    if(a.name > b.name) return 1;
+    if(a.name < b.name) return -1;
+    return 0 
+})[n-1]
+
 
 console.log(`name ${lastHuman.name}`);
 console.log(`addr ${lastHuman.code}`);
