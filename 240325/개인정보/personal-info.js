@@ -11,7 +11,7 @@ class Student {
 const students = [];
 for(let i =0; i < input.length; i++){
     let [name, height, weight] = input[i].split(" ");
-    students.push(new Student(name, Number(height), Number(weight)));
+    students.push(new Student(name, parseFloat(height), parseFloat(weight)));
 }
 
 console.log("name");
