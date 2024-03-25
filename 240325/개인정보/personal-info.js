@@ -11,7 +11,7 @@ class Student {
 const students = [];
 for(let i =0; i < input.length; i++){
     let [name, height, weight] = input[i].split(" ");
-    students.push(new Student(name, parseFloat(height), parseFloat(weight)));
+    students.push(new Student(name, Number(height), Number(weight)));
 }
 
 console.log("name");
@@ -22,7 +22,7 @@ students.sort((a,b)=>{
 })
 students.sort()
 
-students.forEach((student)=> console.log(student.name, student.height, student.weight));
+students.forEach((student)=> console.log(student.name, student.height, student.weight.toFixed(1)));
 
 console.log();
 console.log("height");
@@ -30,4 +30,4 @@ students.sort((a,b)=>{
     return b.height - a.height;
 })
 
-students.forEach((student)=> console.log(student.name, student.height, student.weight));
+students.forEach((student)=> console.log(student.name, student.height, student.weight.toFixed(1)));
