@@ -25,6 +25,6 @@ function getCount(interDays){
     return count;
 }
 
-let interDays = getDays(m2,d2)-getDays(m1,d1)+1;
+let interDays = getDays(m2,d2)-getDays(m1,d1);
 
 console.log(getCount(interDays));
