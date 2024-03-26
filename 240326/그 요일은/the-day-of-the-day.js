@@ -2,7 +2,7 @@ const input = require("fs").readFileSync(0).toString().trim().split("\n");
 const [m1,d1,m2,d2] = input[0].split(" ").map(Number);
 const day = input[1]
 
-const num_of_days = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+const num_of_days = [0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 const week = ["Mon", "Tue","Wed","Thu","Fri","Sat","Sun"];
 const searchWeekIndex = week.indexOf(day);
 
