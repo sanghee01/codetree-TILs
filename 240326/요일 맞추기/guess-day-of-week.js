@@ -16,9 +16,9 @@ function getDay(m,d){
 
 const interDays = getDay(m2,d2) - getDay(m1,d1);
 
-if(interDays > 0){
+if(interDays >= 0){
     answer = week[interDays%7];
-}else{
+}else({
     answer = week[week.length - Math.abs(interDays)%7]
 }
 console.log(answer);
