@@ -2,7 +2,7 @@ const input = require("fs").readFileSync(0).toString().trim().split("\n");
 const [n,k] = input[0].trim().split(" ").map(Number);
 input.shift();
 
-const blocks = new Array(n).fill(0)
+const blocks = new Array(n+1).fill(0)
 
 input.forEach((a) =>{
     let [start, end] = a.trim().split(" ").map(Number);
